@@ -1,26 +1,26 @@
-# asldjf;als 
+# ReadMe Generator 
  ## Description 
- alsdjflak; 
+ CLI ReadMe Generator with inquire and prompts 
  ## Table Of Contents 
  - [Title](#title) 
  - [Description](#description) 
  - [Installation](#installation) 
  - [Usage](#usage) 
- - [Liscense](#liscense) 
+ - [License](#license) 
  - [Contributing](#contributing) 
  - [Test](#test) 
  - [Questions](#questions) 
  ## Installation 
- asldjflajs;dl 
+ run from cli 
  ## Usage 
- a;lsdkfj;alk 
+ run from cli 
  ## License 
  MIT License 
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
  ## Contributing 
- aslkdjfal;s 
+ Nick McCarthy 
  ## Tests 
- asdlfkas 
+ N/A 
  ## Questions 
- UserName: sadfjlkjfasd 
- https://github.com/sadfjlkjfasd
+ UserName: Nick-McCarthy 
+ https://github.com/Nick-McCarthy
