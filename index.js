@@ -19,32 +19,32 @@ inquirer
             },
             {
                 type: 'input',
-                message: "What's the project Installation Section?",
+                message: "What Goes In The Installation Section?",
                 name: 'installation',
                 validate: (value) => { if (value) { return true } else { return "Please input a value" } },
             },
             {
                 type: 'input',
-                message: "What's the project Usage Section?",
+                message: "What Goes In The Usage Section?",
                 name: 'usage',
                 validate: (value) => { if (value) { return true } else { return "Please input a value" } },
             },
             {
                 type: 'list',
                 message: "What Liscense did you use?",
-                name: 'title',
-                choices: ['MIT License', 'Apache', 'IBM', 'Mozila', 'NA'],
+                name: 'license',
+                choices: ['MIT License', 'Apache', 'IBM', 'Mozila', 'N/A'],
                 validate: (value) => { if (value) { return true } else { return "Please input a value" } },
             },
             {
                 type: 'input',
-                message: "What's the project Liscense Section?",
+                message: "What Goes In the Contributing Section?",
                 name: 'contributing',
                 validate: (value) => { if (value) { return true } else { return "Please input a value" } },
             },
             {
                 type: 'input',
-                message: "What's the project Test Section?",
+                message: "What Goes In The Test Section?",
                 name: 'test',
                 validate: (value) => { if (value) { return true } else { return "Please input a value" } },
             },
@@ -61,7 +61,7 @@ inquirer
         var licenseLink = '';
         if (license === 'Apache') {
             licenseLink = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
-        } else if (license === 'MIT Liscense'){
+        } else if (license === 'MIT License') {
             licenseLink = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
         } else if (license === 'IBM') {
             licenseLink = '[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)'
