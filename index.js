@@ -33,7 +33,7 @@ inquirer
                 type: 'list',
                 message: "What Liscense did you use?",
                 name: 'title',
-                choices: ['The MIT License', null],
+                choices: ['MIT License', 'Apache', 'IBM', 'Mozila', 'NA'],
                 validate: (value) => { if (value) { return true } else { return "Please input a value" } },
             },
             {
@@ -50,7 +50,7 @@ inquirer
             },
             {
                 type: 'input',
-                message: "What's the project Questions Section?",
+                message: "For the Questions Section Please Provide Your Github Username?",
                 name: 'questions',
                 validate: (value) => { if (value) { return true } else { return "Please input a value" } },
             }
@@ -58,9 +58,21 @@ inquirer
         ])
     .then(({ title, description, installation, usage, license, contributing, test, questions }) => {
         // Use user feedback 
+        var licenseLink = '';
+        if (license === 'Apache') {
+            licenseLink = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+        } else if (license === 'MIT Liscense'){
+            licenseLink = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+        } else if (license === 'IBM') {
+            licenseLink = '[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)'
+        } else if (license === 'Mozila') {
+            licenseLink = '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)'
+        } else {
+            licenseLink = ''
+        };
         //title, description, tableOfContents, installation, usage, license, contributing, test, questions
         const createReadMe = () => {
-            fs.writeFile('README.md', `# ${title} \n ## Description \n ${description} \n ## Table Of Contents \n ${tableOfContents} \n ## Installation \n ${installation} \n ## Usage \n ${usage} \n ${license ? `## License \n ${license}` : null} \n ## Contributing \n ${contributing} \n ## Tests \n ${test} \n ## Questions \n ${questions}`, function (err, file) {
+            fs.writeFile('README.md', `# ${title} \n ## Description \n ${description} \n ## Table Of Contents \n - [Title](#title) \n - [Description](#description) \n - [Installation](#installation) \n - [Usage](#usage) \n - [Liscense](#liscense) \n - [Contributing](#contributing) \n - [Test](#test) \n - [Questions](#questions) \n ## Installation \n ${installation} \n ## Usage \n ${usage} \n ## License \n ${license} \n ${licenseLink} \n ## Contributing \n ${contributing} \n ## Tests \n ${test} \n ## Questions \n UserName: ${questions} \n https://github.com/${questions}`, function (err, file) {
                 if (err) throw err;
                 console.log('File Created & Populated');
             })
