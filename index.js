@@ -72,7 +72,7 @@ inquirer
         };
         //title, description, tableOfContents, installation, usage, license, contributing, test, questions
         const createReadMe = () => {
-            fs.writeFile('README.md', `# ${title} \n ## Description \n ${description} \n ## Table Of Contents \n - [Title](#title) \n - [Description](#description) \n - [Installation](#installation) \n - [Usage](#usage) \n - [License](#license) \n - [Contributing](#contributing) \n - [Test](#test) \n - [Questions](#questions) \n ## Installation \n ${installation} \n ## Usage \n ${usage} \n ## License \n ${license} \n ${licenseLink} \n ## Contributing \n ${contributing} \n ## Tests \n ${test} \n ## Questions \n UserName: ${questions} \n https://github.com/${questions}`, function (err, file) {
+            fs.writeFile('README.md', `# ${title} \n ## Description \n ${description} \n ## Table Of Contents \n - [Title](#title) \n - [Description](#description) \n - [Installation](#installation) \n - [Usage](#usage) \n - [License](#license) \n - [Contributing](#contributing) \n - [Test](#test) \n - [Questions](#questions) \n ## Installation \n ${installation} \n ## Usage \n ${usage} \n ## License \n ${license} \n ${licenseLink} \n ## Contributing \n ${contributing} \n ## Test \n ${test} \n ## Questions \n UserName: ${questions} \n https://github.com/${questions}`, function (err, file) {
                 if (err) throw err;
                 console.log('File Created & Populated');
             })

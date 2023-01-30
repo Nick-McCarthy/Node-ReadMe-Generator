@@ -1,6 +1,6 @@
-# ReadMe Generator 
+# NA 
  ## Description 
- CLI ReadMe Generator with inquire and prompts 
+ NA 
  ## Table Of Contents 
  - [Title](#title) 
  - [Description](#description) 
@@ -11,16 +11,16 @@
  - [Test](#test) 
  - [Questions](#questions) 
  ## Installation 
- run from cli 
+ NA 
  ## Usage 
- run from cli 
+ NA 
  ## License 
  MIT License 
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
  ## Contributing 
- Nick McCarthy 
- ## Tests 
- N/A 
+ NA 
+ ## Test 
+ NA 
  ## Questions 
  UserName: Nick-McCarthy 
  https://github.com/Nick-McCarthy
