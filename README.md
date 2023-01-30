@@ -16,10 +16,10 @@
  run node index.js within the directory from command line. 
  caption: command prompts
 <br>
-![<img src="cli-prompts.png" width="250"/>](images/cli-prompts.png)
+![<img src="cli-prompts.jpg" width="250"/>](images/cli-prompts.jpg)
 caption: generated readme
 <br>
-![<img src="generated-readme-example.png" width="250"/>](images/generated-readme-example.png)
+![<img src="generated-readme-example.jpg" width="250"/>](images/generated-readme-example.jpg)
 
  ## License 
  MIT License 
