@@ -17,6 +17,7 @@
  caption: command prompts
 <br>
 ![<img src="cli-prompts.jpg" width="250"/>](images/cli-prompts.jpg)
+<br>
 caption: generated readme
 <br>
 ![<img src="generated-readme-example.jpg" width="250"/>](images/generated-readme-example.jpg)
