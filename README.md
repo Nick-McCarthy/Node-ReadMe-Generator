@@ -14,6 +14,13 @@
  requires node and inquirer 8.2.4 
  ## Usage 
  run node index.js within the directory from command line. 
+ caption: command prompts
+<br>
+![<img src="cli-prompts.png" width="250"/>](images/cli-prompts.png)
+caption: generated readme
+<br>
+![<img src="generated-readme-example.png" width="250"/>](images/generated-readme-example.png)
+
  ## License 
  MIT License 
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
